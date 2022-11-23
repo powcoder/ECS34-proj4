@@ -1,0 +1,25 @@
+https://powcoder.com
+代写代考加微信 powcoder
+Assignment Project Exam Help
+Add WeChat powcoder
+#ifndef CSVREADER_H
+#define CSVREADER_H
+
+#include <istream>
+#include <string>
+#include <vector>
+#include <csv.h>
+
+class CCSVReader{
+    protected:
+        
+        
+    public:
+        CCSVReader(std::istream &in);
+        ~CCSVReader();
+        
+        bool End() const;
+        bool ReadRow(std::vector< std::string > &row);
+};
+
+#endif
